@@ -1,8 +1,8 @@
-import Link from "next/link";
-import { UserMenu } from "@/components/user-menu";
+import Link from 'next/link'
+import { UserMenu } from '@/components/user-menu'
 
 interface HeaderProps {
-  children?: React.ReactNode;
+  children?: React.ReactNode
 }
 
 export const Header = ({ children }: HeaderProps) => {
@@ -10,7 +10,7 @@ export const Header = ({ children }: HeaderProps) => {
     <header className="h-10 flex justify-between items-center">
       <Link href="/">
         <h2 className="text-lg font-semibold text-secondary-foreground">
-          🐶 Billy Bror
+          🐶 Little Ani
         </h2>
       </Link>
 
@@ -19,5 +19,5 @@ export const Header = ({ children }: HeaderProps) => {
         <UserMenu />
       </nav>
     </header>
-  );
-};
+  )
+}
